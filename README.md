@@ -49,6 +49,6 @@ python3 generator.py
 cp localhost/update-center.json /var/www/jenkins/
 ```
 
-1. Put `update-center.crt` into `${JENKINS_HOME}/update-center-rootCAs` folder.
+1. Put `update-center.crt` into `${JENKINS_HOME}/update-center-rootCAs` folder. chown it to jenkins:jenkins. Use chmod 640 on the file.
 2. Go to `Jenkins → Manage Jenkins → Manage Plugins → Advanced → Update Site` and submit URL to your `update-center.json`.
 
