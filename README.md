@@ -23,7 +23,7 @@ openssl req -new -x509 -days 3650 -key rootCA/update-center.key -out rootCA/upda
 3. Rsync into your www root directory:
 
 ```bash
-rsync -avz --delete rsync://rsync.osuosl.org/jenkins/ /var/www/jenkins
+rsync -avz --delete rsync://rsync.belnet.be/jenkins/ /var/www/jenkins
 ```
 
 4. Install dependencies:
