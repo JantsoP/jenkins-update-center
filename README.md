@@ -8,13 +8,14 @@ Jenkins mirror update center generator
 1. Clone code:
 
 ```bash
-git clone https://github.com/iamtrump/jenkins-update-center.git 
+git clone https://github.com/JantsoP/jenkins-update-center.git 
 ```
 
 2. Generate self-signed certificate:
 
 ```bash
 cd jenkins-update-center
+mkdir rootCA
 openssl genrsa -out rootCA/update-center.key 2048
 openssl req -new -x509 -days 3650 -key rootCA/update-center.key -out rootCA/update-center.crt
 ```
