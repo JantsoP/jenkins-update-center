@@ -30,7 +30,7 @@ rsync -avz --delete rsync://rsync.belnet.be/jenkins/ /var/www/jenkins
 
 ```bash
 yum -y install make gcc automake autoconf python3-devel git
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 5. Setup mirrors json:
 
